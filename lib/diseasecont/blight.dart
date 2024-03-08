@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:soybeaan_icrc/soyfood.dart';
 
 
-class Viral extends StatelessWidget {
+class Blight extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

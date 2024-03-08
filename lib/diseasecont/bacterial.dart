@@ -1,111 +1,122 @@
-import 'package:flutter/cupertino.dart';
+
 import 'package:flutter/material.dart';
-import 'package:soybeaan_icrc/soyfood.dart';
+import 'package:soybeaan_icrc/ContentPage.dart';
+import 'package:soybeaan_icrc/diseasecont/bacterial.dart';
+import 'package:soybeaan_icrc/diseasecont/blight.dart';
+import 'package:soybeaan_icrc/diseasecont/fungal.dart';
+import 'package:soybeaan_icrc/diseasecont/viral.dart';
 
 
-class Bacterial extends StatelessWidget {
+
+class Bacterial extends StatefulWidget {
+
+  @override
+  State<Bacterial> createState() => _Bacterial();
+}
+
+class _Bacterial extends State<Bacterial> {
+  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return MaterialApp(
+      home:  Scaffold(
+        backgroundColor: Colors.white,
+        appBar: AppBar(
+          leading: IconButton(
+              icon: Icon(Icons.arrow_back),
+              onPressed:(){
+                Navigator.pop(context,
+                  MaterialPageRoute(builder: (context)=>
+                      ContentPage(),),
+                );
 
-
-      body: CustomScrollView(
-        slivers: [
-          SliverAppBar(
-            floating: true,
-            expandedHeight: 200,
-            flexibleSpace: FlexibleSpaceBar(
-              background: Image.asset(
-                'assets/images/bd.jpeg',
-                fit: BoxFit.cover,
-              ),
-            ),
-
-            backgroundColor: Colors.green[900],
-
+              }
           ),
-          SliverFillRemaining(
-            child: DefaultTabController(
-              length: 3,
+          title: const Text('Bacterial Diseases'),
+          backgroundColor: Colors.green,
+          foregroundColor: Colors.white,
+        ),
+        body: SingleChildScrollView(
 
-              child: Scaffold(backgroundColor: Colors.green[800],
-                appBar: AppBar(
-                  automaticallyImplyLeading: false,
-
-                  title: Text('Blue Beetle(Cneorane sp.)', style:TextStyle(color: Colors.white,fontSize: 20)),
-                  backgroundColor: Colors.green[800],
-
-                  bottom: TabBar(
-                    indicatorColor: Colors.white,
-                    tabs: [
-                      Tab(
-                        child: Text('Identification',
-
-
-                          style: TextStyle(fontSize: 14, color: Colors.white ,fontWeight: FontWeight.bold,),
-
-
-                        ),),
-                      Tab(
-                        child: Text('Damage',
-                          style: TextStyle(fontSize: 14, color: Colors.white ,fontWeight: FontWeight.bold),
-
-                        ),),
-
-                      Tab(
-                        child: Text('Management',
-                          style: TextStyle(fontSize: 14, color: Colors.white ,fontWeight: FontWeight.bold,),
-                        ),),
-
-                    ],
-                  ),
-
+            child: Column(
+              children: [
+                SizedBox(
+                  height: 20,
                 ),
-                body: TabBarView(
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
-                    Container(
 
-                      margin: EdgeInsets.all(16.0),
-                      padding: EdgeInsets.all(18.0),
-                      decoration: BoxDecoration(
+                    const Padding(padding: EdgeInsets.only(left: 10)),
+                    Column(
+                      children: [
+                        ClipRRect(
+                          borderRadius: BorderRadius.circular(10),
+                          child: Image.asset('assets/images/blight.jpg',
+                              width: 150,height: 150,
+                              fit: BoxFit.cover) ,
+                        ),
 
-                          color: Colors.lightGreen,
-                          borderRadius:BorderRadius.circular(50)
-                      ),
-                      child: Center(child: Text('This insect is dark metallic blue (almost blackish) in colour, with orange head.   With little disturbance, it falls on the ground and shows Feign-death',style: TextStyle(fontWeight: FontWeight.bold))  ),
+                        ElevatedButton(onPressed: (){
+                          Navigator.push(context,
+                            MaterialPageRoute(builder: (context)=>
+                                Blight(),),
+                          );
+                        },
+                            style:ElevatedButton.styleFrom(
+                                backgroundColor: Colors.green,
+                                foregroundColor: Colors.white
+                            ),
+                            child: const Text('Bacterial Blight')
+                        ),
+
+                      ],
+
+                    ),
+                    const Padding(padding: EdgeInsets.only(right: 10)),
+                    Column(
+                      children: [
+                        ClipRRect(
+                          borderRadius: BorderRadius.circular(10),
+                          child: Image.asset('assets/images/pustule.jpg',
+                              width: 150,height: 150,
+                              fit: BoxFit.cover) ,
+                        ),
+
+                        ElevatedButton(onPressed: (){
+                          Navigator.push(context,
+                            MaterialPageRoute(builder: (context)=>
+                                Bacterial(),),
+                          );
+
+                        },
+                            style:ElevatedButton.styleFrom(
+                                backgroundColor: Colors.green,
+                                foregroundColor: Colors.white
+                            ),
+                            child: const Text('Bacterial Pustule')
+                        ),
+
+                      ],
 
                     ),
 
-
-                    Container(
-
-                        margin: EdgeInsets.all(16.0),
-                        padding: EdgeInsets.all(18.0),
-                        decoration: BoxDecoration(
-                            color: Colors.lightGreen,
-                            borderRadius:BorderRadius.circular(50)
-                        ),
-                        child:   Center(child: Text('Usually its peak period of activity is first fortnight of July. During this period, it feeds on the cotyledons and young leaves, which results in stunted growth.  On heavy infestation, plant population is greatly affected and the yield loss is to the tune of 5 q/ha. Its infestation is more under high soil moisture conditions.',style: TextStyle(fontWeight: FontWeight.bold)) )),
-
-
-                    Container(
-
-                        margin: EdgeInsets.all(16.0),
-                        padding: EdgeInsets.all(18.0),
-                        decoration: BoxDecoration(
-                            color: Colors.lightGreen,
-                            borderRadius:BorderRadius.circular(50)
-                        ),
-                        child: Center(child: Text('Blue beetle can be effectively controlled by spray of Quinalphos 25 EC @ 1.5 l/ha.',style: TextStyle(fontWeight: FontWeight.bold)) ) ),
-
-
                   ],
+
+
                 ),
-              ),
-            ),
-          ),
-        ],
-      ),
+
+
+]
+        )
+
+                ),
+
+            )
+
     );
+
+
+
   }
 }

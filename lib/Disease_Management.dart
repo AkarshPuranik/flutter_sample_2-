@@ -1,104 +1,143 @@
-import 'package:soybeaan_icrc/ContentPage.dart';
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
+import 'package:soybeaan_icrc/ContentPage.dart';
 import 'package:soybeaan_icrc/diseasecont/bacterial.dart';
+import 'package:soybeaan_icrc/diseasecont/fungal.dart';
+import 'package:soybeaan_icrc/diseasecont/viral.dart';
 
 
-class Disease_Management extends StatelessWidget {
+
+class Disease_Management extends StatefulWidget {
+
+  @override
+  State<Disease_Management> createState() => _Disease_ManagementState();
+}
+
+class _Disease_ManagementState extends State<Disease_Management> {
+  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: Colors.white,
-      appBar: AppBar(
-        leading: IconButton(
-          icon: const Icon(Icons.arrow_back),
-          onPressed: () {
-            Navigator.pop(
-              context,
-              MaterialPageRoute(
-                builder: (context) => ContentPage(),
-              ),
-            );
-          },
-        ),
-        title: const Text('Disease Management'),
-        backgroundColor: Colors.green,
-        foregroundColor: Colors.white,
-      ),
-      body: SingleChildScrollView(
-        child: Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: GridView.count(
-            physics: NeverScrollableScrollPhysics(),
-            shrinkWrap: true,
-            crossAxisCount: 2,
-            crossAxisSpacing: 16.0,
-            mainAxisSpacing: 16.0,
-            children: [
-              _buildSoyFoodItem(
-                context,
-                'Bacterial Diseases',
-                'assets/images/bd.jpeg',
-                Bacterial(),
-              ),
-              _buildSoyFoodItem(
-                context,
-                'Fungal Diseases',
-                'assets/images/fungal.jpg',
-                Bacterial(),
-              ),
-              _buildSoyFoodItem(
-                context,
-                'Viral Diseases',
-                'assets/images/viral.jpeg',
-                Bacterial(),
-              ),
+    return MaterialApp(
+      home:  Scaffold(
+        backgroundColor: Colors.white,
+        appBar: AppBar(
+          leading: IconButton(
+              icon: Icon(Icons.arrow_back),
+              onPressed:(){
+                Navigator.pop(context,
+                  MaterialPageRoute(builder: (context)=>
+                      ContentPage(),),
+                );
 
-            ],
+              }
           ),
+          title: const Text('Disease Management'),
+          backgroundColor: Colors.green,
+          foregroundColor: Colors.white,
         ),
-      ),
-    );
-  }
+        body: SingleChildScrollView(
 
-  Widget _buildSoyFoodItem(BuildContext context,
-      String title,
-      String imagePath,
-      Widget page,) {
-    return GestureDetector(
-      onTap: () {
-        Navigator.push(
-          context,
-          MaterialPageRoute(builder: (context) => page),
-        );
-      },
-      child: Card(
-        elevation: 4.0,
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(10.0),
+            child: Column(
+              children: [
+                SizedBox(
+                  height: 20,
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+
+                    const Padding(padding: EdgeInsets.only(left: 10)),
+                    Column(
+                      children: [
+                        ClipRRect(
+                          borderRadius: BorderRadius.circular(10),
+                          child: Image.asset('assets/images/bd.jpeg',
+                              width: 150,height: 150,
+                              fit: BoxFit.cover) ,
+                        ),
+
+                        ElevatedButton(onPressed: (){
+                          Navigator.push(context,
+                            MaterialPageRoute(builder: (context)=>
+                                Bacterial(),),
+                          );
+                        },
+                            style:ElevatedButton.styleFrom(
+                                backgroundColor: Colors.green,
+                                foregroundColor: Colors.white
+                            ),
+                            child: const Text('Bacterial Diseases')
+                        ),
+
+                      ],
+
+                    ),
+                    const Padding(padding: EdgeInsets.only(right: 10)),
+                    Column(
+                      children: [
+                        ClipRRect(
+                          borderRadius: BorderRadius.circular(10),
+                          child: Image.asset('assets/images/fungal.jpg',
+                              width: 150,height: 150,
+                              fit: BoxFit.cover) ,
+                        ),
+
+                        ElevatedButton(onPressed: (){
+                          Navigator.push(context,
+                            MaterialPageRoute(builder: (context)=>
+                                Fungal(),),
+                          );
+
+                        },
+                            style:ElevatedButton.styleFrom(
+                                backgroundColor: Colors.green,
+                                foregroundColor: Colors.white
+                            ),
+                            child: const Text('Fungal Diseases')
+                        ),
+
+                      ],
+
+                    ),
+
+                  ],
+
+
+                ),
+
+
+
+
+                Column(
+                  children: [
+                    ClipRRect(
+                      borderRadius: BorderRadius.circular(10),
+                      child: Image.asset('assets/images/viral.jpeg',
+                          width: 150,height: 150,
+                          fit: BoxFit.cover) ,
+                    ),
+
+
+                    ElevatedButton(onPressed: (){
+                      Navigator.push(context,
+                        MaterialPageRoute(builder: (context)=>
+                            Viral(),),
+                      );
+
+                    },
+                        style:ElevatedButton.styleFrom(
+                            backgroundColor: Colors.green,
+                            foregroundColor: Colors.white
+                        ),
+                        child: const Text('Viral Diseases')
+                    ),
+                  ],
+                ),
+              ],
+            )
+
         ),
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            ClipRRect(
-              borderRadius: BorderRadius.circular(10),
-              child: Image.asset(
-                imagePath,
-                width: 100,
-                height: 100,
-                fit: BoxFit.cover,
-              ),
-            ),
-            const SizedBox(height: 8.0),
-            Text(
-              title,
-              style: TextStyle(
-                fontSize: 16.0,
-                fontWeight: FontWeight.bold,
-              ),
-              textAlign: TextAlign.center,
-            ),
-          ],
-        ),
+
       ),
     );
   }
