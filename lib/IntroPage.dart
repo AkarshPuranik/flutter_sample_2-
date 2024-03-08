@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:soybeaan_icrc/ContentPage.dart';
 import 'package:soybeaan_icrc/Disease_Management.dart';
+import 'package:soybeaan_icrc/farm.dart';
 import 'package:soybeaan_icrc/soyfood.dart';
 import 'Crop_Management.dart';
 import 'package:soybeaan_icrc/SoyInsect.dart';
@@ -108,7 +109,7 @@ import 'package:soybeaan_icrc/SoyInsect.dart';
     Navigator.push(
     context,
     MaterialPageRoute(
-    builder: (context) => SoyInsect(),
+    builder: (context) => farm(),
     ),
     );
     },

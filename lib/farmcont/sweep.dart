@@ -72,7 +72,7 @@ class Sweep extends StatelessWidget {
                           color: Colors.lightGreen,
                           borderRadius:BorderRadius.circular(50)
                       ),
-                      child: Center(child: Text('Adult moths are light yellow or pink in colour. Wings are also light yellow with small black spots.Young larvae are dirty yellow which become brownish red later on. Larvae possess long bristles all over the body.',style: TextStyle(fontWeight: FontWeight.bold))  ),
+                      child: Center(child: Text('The sweep seed drill has a facility to sow and simultaneously do weeding cum tillage operation.The machine is specially devised to use it for both kharif and rabi crops.The machine has a provision to maintain row to row distance.Rows in the seed drill are adjustable.Sweep seed drill facilitates prevention of inundation from rain water.Crop sown with seed drill has a facility to drain out water from the soil.Sweep seed drill helps to store rain water in the field channel and prevention run off unlike flat bed sown field.The sweep seed drill pushes the soil towards the sowing furrow thus forming slope between the soybean and shallow channel.This machine can also control sowing depth.The machine is quite sturdy and all parts have been designed to have no breakdown.The sweep seed drill is designed to lift soil from bottom.It tills the soil and uproots the feed also from the top surface of the soil.',style: TextStyle(fontWeight: FontWeight.bold))  ),
 
                     ),
 
@@ -85,7 +85,7 @@ class Sweep extends StatelessWidget {
                           color: Colors.lightGreen,
                           borderRadius:BorderRadius.circular(50)
                       ),
-                      child:   Center(child: Text('Newly hatched larvae are gregarious and skeletomize the leaves by feeding on he chlorophyll content. After 8-10 days, larvae scatter to neighboring plants and consume leaves.If timely control measures are not taken, population of larvae and the damage increase very rapidly. On heavy incidence, they completely denude the plants.This results in reduction in grain number and weight per pod and ultimately in yield. Larvae damage the crop from July-August to October.',style: TextStyle(fontWeight: FontWeight.bold))),
+                      child:   Center(child: Text('The machine presently costs Rs. 50,000/-which is likely to be revised as and when needed. This excludes the cost of transport which is to be borne by buyer.',style: TextStyle(fontWeight: FontWeight.bold))),
 
                     ),
                     Container(
@@ -96,7 +96,7 @@ class Sweep extends StatelessWidget {
                           color: Colors.lightGreen,
                           borderRadius:BorderRadius.circular(50)
                       ),
-                      child: Center(child: Text('Generally theBihar hairy caterpillar can be found in abundant numbers on single soybean plant and feed on foliage leaving only veins. These plants should be removed and destroyed for preventing its further spread.If needed, the crop should be sprayed with Triazophos 40 EC (0.8 l/ha) or Quinolphos 25 EC (1.5 l/ha) or Indoxacarb 14.5 SC (0.3 l/ha) or Chlorentraniliprol 18.5 SC (0.10 l/ha) to manage the pests.',style: TextStyle(fontWeight: FontWeight.bold)) ),
+                      child: Center(child: Text('Order and payment for sweep seed drill machine is to be made to Director, DSR, Khandwa Road, Indore 452001, M.P.',style: TextStyle(fontWeight: FontWeight.bold)) ),
                     )
 
                   ],

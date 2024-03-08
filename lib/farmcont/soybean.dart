@@ -72,7 +72,7 @@ class Soy extends StatelessWidget {
                           color: Colors.lightGreen,
                           borderRadius:BorderRadius.circular(50)
                       ),
-                      child: Center(child: Text('Adult moths are light yellow or pink in colour. Wings are also light yellow with small black spots.Young larvae are dirty yellow which become brownish red later on. Larvae possess long bristles all over the body.',style: TextStyle(fontWeight: FontWeight.bold))  ),
+                      child: Center(child: Text('It is a unique machine with provisions for drilling the seeds and also to plant the seeds ie. to maintain seed to seed distance.Either of the two options can be used iust by shifting the plastic pipe from one hole to another.This is a machine which helps farmer to drill or plant the soybean seeds and also other crops with proper adjustment.This unique machine can perform both drilling and planting operations.',style: TextStyle(fontWeight: FontWeight.bold))  ),
 
                     ),
 
@@ -85,7 +85,7 @@ class Soy extends StatelessWidget {
                           color: Colors.lightGreen,
                           borderRadius:BorderRadius.circular(50)
                       ),
-                      child:   Center(child: Text('Newly hatched larvae are gregarious and skeletomize the leaves by feeding on he chlorophyll content. After 8-10 days, larvae scatter to neighboring plants and consume leaves.If timely control measures are not taken, population of larvae and the damage increase very rapidly. On heavy incidence, they completely denude the plants.This results in reduction in grain number and weight per pod and ultimately in yield. Larvae damage the crop from July-August to October.',style: TextStyle(fontWeight: FontWeight.bold))),
+                      child:   Center(child: Text('The machine presently costs Rs. 67,200/-which is likely to be revised as and when needed. This excludes the cost of transport which is to be borne by buyer.',style: TextStyle(fontWeight: FontWeight.bold))),
 
                     ),
                     Container(
@@ -96,7 +96,7 @@ class Soy extends StatelessWidget {
                           color: Colors.lightGreen,
                           borderRadius:BorderRadius.circular(50)
                       ),
-                      child: Center(child: Text('Generally theBihar hairy caterpillar can be found in abundant numbers on single soybean plant and feed on foliage leaving only veins. These plants should be removed and destroyed for preventing its further spread.If needed, the crop should be sprayed with Triazophos 40 EC (0.8 l/ha) or Quinolphos 25 EC (1.5 l/ha) or Indoxacarb 14.5 SC (0.3 l/ha) or Chlorentraniliprol 18.5 SC (0.10 l/ha) to manage the pests.',style: TextStyle(fontWeight: FontWeight.bold)) ),
+                      child: Center(child: Text('Order and payment for Soybean Seed Drill cum Planter (two in one) machine is to be made to Director, DSR, Khandwa Road, Indore 452001, M.P.',style: TextStyle(fontWeight: FontWeight.bold)) ),
                     )
 
                   ],

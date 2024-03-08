@@ -72,7 +72,7 @@ class Ridge extends StatelessWidget {
                           color: Colors.lightGreen,
                           borderRadius:BorderRadius.circular(50)
                       ),
-                      child: Center(child: Text('Adult moths are light yellow or pink in colour. Wings are also light yellow with small black spots.Young larvae are dirty yellow which become brownish red later on. Larvae possess long bristles all over the body.',style: TextStyle(fontWeight: FontWeight.bold))  ),
+                      child: Center(child: Text('The Ridge fertilizer drill cum seed planter machine has a ability to adjust desired depth of basal doze fertilizer.The Ridge fertilizer drill cum seed planter machine has a ability to adjust desired depth of soybean seeds for sowing.Ridge fertilizer drill cum seed planter machine can be operating with 55 PTO HP tractors.This machine has a provision to adjust desired row to row distance.This machine also facilitates irrigation through channels easily as and when desired.The machine has additional channel opener wings which are provided as an additional option for increasing/ decreasing with of the channels and height of the ridges.The machine has ridge stabilizer at the rear end of the frame.The Ridge fertilizer drill cum seed planter machine has a facility to change the seed dropping roller as per the size of the seed.Ridge fertilizer drill cum seed planter machine has provision of 4 furrow openers with 5 additional furrow openers.',style: TextStyle(fontWeight: FontWeight.bold))  ),
 
                     ),
 
@@ -85,7 +85,7 @@ class Ridge extends StatelessWidget {
                           color: Colors.lightGreen,
                           borderRadius:BorderRadius.circular(50)
                       ),
-                      child:   Center(child: Text('Newly hatched larvae are gregarious and skeletomize the leaves by feeding on he chlorophyll content. After 8-10 days, larvae scatter to neighboring plants and consume leaves.If timely control measures are not taken, population of larvae and the damage increase very rapidly. On heavy incidence, they completely denude the plants.This results in reduction in grain number and weight per pod and ultimately in yield. Larvae damage the crop from July-August to October.',style: TextStyle(fontWeight: FontWeight.bold))),
+                      child:   Center(child: Text('The machine presently costs Rs. 69,100/-(04 bottom) Rs. 74,800/-(05 bottom)which is likely to be revised as and when needed. This excludes the cost of transport which is to be borne by buyer.which is to be borne by buyer.',style: TextStyle(fontWeight: FontWeight.bold))),
 
                     ),
                     Container(
@@ -96,7 +96,7 @@ class Ridge extends StatelessWidget {
                           color: Colors.lightGreen,
                           borderRadius:BorderRadius.circular(50)
                       ),
-                      child: Center(child: Text('Generally theBihar hairy caterpillar can be found in abundant numbers on single soybean plant and feed on foliage leaving only veins. These plants should be removed and destroyed for preventing its further spread.If needed, the crop should be sprayed with Triazophos 40 EC (0.8 l/ha) or Quinolphos 25 EC (1.5 l/ha) or Indoxacarb 14.5 SC (0.3 l/ha) or Chlorentraniliprol 18.5 SC (0.10 l/ha) to manage the pests.',style: TextStyle(fontWeight: FontWeight.bold)) ),
+                      child: Center(child: Text('Order and payment for Ridge fertilizer drill cum seed planter machine is to be made to Director, DSR, Khandwa Road, Indore 452001, M. P.',style: TextStyle(fontWeight: FontWeight.bold)) ),
                     )
 
                   ],
