@@ -1,5 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:soybeaan_icrc/ContentPage.dart';
+import 'package:soybeaan_icrc/soyfoodcont/soychakli.dart';
+import 'package:soybeaan_icrc/soyfoodcont/soycurd.dart';
+import 'package:soybeaan_icrc/soyfoodcont/soyflour.dart';
+import 'package:soybeaan_icrc/soyfoodcont/soyhalwa.dart';
+import 'package:soybeaan_icrc/soyfoodcont/soyladoo.dart';
+import 'package:soybeaan_icrc/soyfoodcont/soymathari.dart';
+import 'package:soybeaan_icrc/soyfoodcont/soymilk.dart';
+import 'package:soybeaan_icrc/soyfoodcont/soynankhatai.dart';
+import 'package:soybeaan_icrc/soyfoodcont/soynuts.dart';
+import 'package:soybeaan_icrc/soyfoodcont/soypakora.dart';
+import 'package:soybeaan_icrc/soyfoodcont/soyupma.dart';
 import 'package:soybeaan_icrc/soyfoodcont/tofu.dart';
 
 
@@ -44,31 +55,67 @@ class SoyFood extends StatelessWidget {
                 context,
                 'Soychakli',
                 'assets/images/soychakli.jpeg',
-                Tofu(),
+                chakli(),
               ),
               _buildSoyFoodItem(
                 context,
                 'Soycurd',
                 'assets/images/soycurd.webp',
-                Tofu(),
+                curd(),
               ),
               _buildSoyFoodItem(
                 context,
                 'SoyFlour',
-                'assets/images/soyflour.webp',
-                Tofu(),
+                'assets/images/soyflour.png',
+                flour(),
               ),
               _buildSoyFoodItem(
                 context,
                 'Soymilk',
-                'assets/images/soymilk.jpeg',
-                Tofu(),
+                'assets/images/soymilk.jpg',
+                milk(),
               ),
               _buildSoyFoodItem(
                 context,
                 'Soynuts',
                 'assets/images/soynuts.jpg',
-                Tofu(),
+                nuts(),
+              ),
+              _buildSoyFoodItem(
+                context,
+                'Soyhalwa',
+                'assets/images/soy_halwa.jpg',
+                halwa(),
+              ),
+              _buildSoyFoodItem(
+                context,
+                'Soyladoo',
+                'assets/images/soy_ladoo.jpg',
+                ladoo(),
+              ),
+              _buildSoyFoodItem(
+                context,
+                'Soymathari',
+                'assets/images/soy_mathari.jpg',
+                mathari(),
+              ),
+              _buildSoyFoodItem(
+                context,
+                'soynankhatai',
+                'assets/images/soy_nankhatai.jpg',
+                nankhatai(),
+              ),
+              _buildSoyFoodItem(
+                context,
+                'soypakora',
+                'assets/images/soy_pakora.png',
+                pakora(),
+              ),
+              _buildSoyFoodItem(
+                context,
+                'soyupma',
+                'assets/images/soy_upma.jpg',
+                upma(),
               ),
             ],
           ),

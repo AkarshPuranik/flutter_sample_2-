@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class curd extends StatelessWidget {
+class pakora extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -12,7 +12,7 @@ class curd extends StatelessWidget {
             expandedHeight: 300,
             flexibleSpace: FlexibleSpaceBar(
               background: Image.asset(
-                'assets/images/soycurd.webp',
+                'assets/images/soy_pakora.png',
                 fit: BoxFit.cover,
               ),
             ),
@@ -26,7 +26,7 @@ class curd extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    'Soy Curd',
+                    'Soy Pakora',
                     style: TextStyle(
                       fontSize: 30,
                       fontWeight: FontWeight.bold,
@@ -42,7 +42,7 @@ class curd extends StatelessWidget {
                       borderRadius: BorderRadius.circular(50), // Rounded corners
                     ),
                     child: Text(
-                      'Mix soy milk and dairy milk in half- half ratio and add dahi culture in lukewarm milk. Mix it well and keep aside for setting of dahi. Keep it in refrigerator after setting.Soydahi will get ready.It contains high nutrient value.',
+                      'Add okara and besan in equal ratio. Add green chillies-ginger-garlic paste, finely chopped onion and corriender leaves, spices (asafetida, red chilli, corriender powder, salt) and mix well. Batter for preparing bhajie is ready. Heat oil in wok and add in small portion using hand. Fry till golden brown and remove from oil',
                       style: TextStyle(
                         color: Colors.black,fontWeight: FontWeight.bold,
                       ),

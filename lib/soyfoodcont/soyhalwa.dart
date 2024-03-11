@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class curd extends StatelessWidget {
+class halwa extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -12,7 +12,7 @@ class curd extends StatelessWidget {
             expandedHeight: 300,
             flexibleSpace: FlexibleSpaceBar(
               background: Image.asset(
-                'assets/images/soycurd.webp',
+                'assets/images/soy_halwa.jpg',
                 fit: BoxFit.cover,
               ),
             ),
@@ -26,7 +26,7 @@ class curd extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    'Soy Curd',
+                    'Soy Halwa',
                     style: TextStyle(
                       fontSize: 30,
                       fontWeight: FontWeight.bold,
@@ -42,7 +42,7 @@ class curd extends StatelessWidget {
                       borderRadius: BorderRadius.circular(50), // Rounded corners
                     ),
                     child: Text(
-                      'Mix soy milk and dairy milk in half- half ratio and add dahi culture in lukewarm milk. Mix it well and keep aside for setting of dahi. Keep it in refrigerator after setting.Soydahi will get ready.It contains high nutrient value.',
+                      'Add ghee in wok and melt it. Add suji okara mix (1:1) and roast till it becomes brown. After roasting add 4 times water to the mix and keep stirring till it gets thick. Keep the flame low, while cooking and add cashew, almond and rasins at end.',
                       style: TextStyle(
                         color: Colors.black,fontWeight: FontWeight.bold,
                       ),

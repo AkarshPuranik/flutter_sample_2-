@@ -5,6 +5,8 @@ import 'package:soybeaan_icrc/diseasecont/bacterial.dart';
 import 'package:soybeaan_icrc/diseasecont/blight.dart';
 import 'package:soybeaan_icrc/diseasecont/fungal.dart';
 import 'package:soybeaan_icrc/diseasecont/viral.dart';
+import 'package:soybeaan_icrc/diseasecont/pustule.dart';
+
 
 
 
@@ -86,7 +88,7 @@ class _Bacterial extends State<Bacterial> {
                         ElevatedButton(onPressed: (){
                           Navigator.push(context,
                             MaterialPageRoute(builder: (context)=>
-                                Bacterial(),),
+                                Pustule(),),
                           );
 
                         },

@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class curd extends StatelessWidget {
+class ladoo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -12,7 +12,7 @@ class curd extends StatelessWidget {
             expandedHeight: 300,
             flexibleSpace: FlexibleSpaceBar(
               background: Image.asset(
-                'assets/images/soycurd.webp',
+                'assets/images/soy_ladoo.jpg',
                 fit: BoxFit.cover,
               ),
             ),
@@ -26,7 +26,7 @@ class curd extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    'Soy Curd',
+                    'Soy Ladoo',
                     style: TextStyle(
                       fontSize: 30,
                       fontWeight: FontWeight.bold,
@@ -42,7 +42,7 @@ class curd extends StatelessWidget {
                       borderRadius: BorderRadius.circular(50), // Rounded corners
                     ),
                     child: Text(
-                      'Mix soy milk and dairy milk in half- half ratio and add dahi culture in lukewarm milk. Mix it well and keep aside for setting of dahi. Keep it in refrigerator after setting.Soydahi will get ready.It contains high nutrient value.',
+                      'Soy-Atta laddu are energy dense food products relished eating in winters. Add ghee in a wok and allow to it melt. Now add sieved wheat and soy flour in 1:1 ratio in melted ghee and stir constantly. Roast the flour on medium flame until it turns light brown in color and you get good aroma. Add cashews pieces, sugar and crushed coconut in slightly hot roasted flour. Take little amount of mixture in your hands and roll giving it a round shape.',
                       style: TextStyle(
                         color: Colors.black,fontWeight: FontWeight.bold,
                       ),

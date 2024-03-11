@@ -76,11 +76,17 @@ flutter:
         - assets/images/subsoiler.jpg
         - assets/images/sweep.jpg
         - assets/images/broad.jpg
+        - assets/images/soy_upma.jpg
+        - assets/images/soy_pakora.png
+        - assets/images/soy_nankhatai.jpg
+        - assets/images/soy_mathari.jpg
+        - assets/images/soy_ladoo.jpg
+        -  assets/images/soy_halwa.jpg
         - assets/images/soynuts.jpg
-        - assets/images/soymilk.jpeg
+        - assets/images/soymilk.jpg
         - assets/images/soycurd.webp
         - assets/images/tofu.jpeg
-        - assets/images/soyflour.webp
+        - assets/images/soyflour.png
         - assets/images/soychakli.jpeg
         - assets/images/bihar.jpeg
         - assets/images/blue.jpeg
