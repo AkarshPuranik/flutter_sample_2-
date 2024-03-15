@@ -1,9 +1,10 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:soybeaan_icrc/soyfood.dart';
 
 
-class Blight extends StatelessWidget {
+
+
+class indian extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -16,7 +17,7 @@ class Blight extends StatelessWidget {
             expandedHeight: 200,
             flexibleSpace: FlexibleSpaceBar(
               background: Image.asset(
-                'assets/images/blight.jpg',
+                'assets/images/pustule.jpg',
                 fit: BoxFit.cover,
               ),
             ),
@@ -32,7 +33,7 @@ class Blight extends StatelessWidget {
                 appBar: AppBar(
                   automaticallyImplyLeading: false,
 
-                  title: Text('Bacterial Blight', style:TextStyle(color: Colors.white,fontSize: 20)),
+                  title: Text('Indian Bud Blight', style:TextStyle(color: Colors.white,fontSize: 20)),
                   backgroundColor: Colors.green[800],
 
                   bottom: TabBar(
@@ -72,7 +73,7 @@ class Blight extends StatelessWidget {
                           color: Colors.lightGreen,
                           borderRadius:BorderRadius.circular(50)
                       ),
-                      child: Center(child: Text('Causal Organism : Pseudomonas savastanoi (P. syringae) pv. glycinea (Coerper.) Young. Dye & Wilkie (Syn. P. glycinea. Coerper).The bacterium is seed and air borne.It affects Stems, leaves, petioles and pods.The disease is commonly occurring in the states of Madhya Pradesh, Maharashtra, Himachal Pradesh, Uttaranchal and North East States.Losses ranging from 5 to 18% are known mainly on account of loss of leaf area during the reproductive stage of soybean.Cool and rainy weather favours the disease but it also occurs in warmer regions. High temperature and dry weather curb the disease.',style: TextStyle(fontWeight: FontWeight.bold))  ),
+                      child: Center(child: Text('Causal Organism:- In India the causal pathogen is identified as Peanut Bud necrosis virus whereas in other countries it is Tobacco ring spot virus (TRSV). The virus has been described as pleiomorphic and unstable myxovirus.It affects Leaves, buds (specially terminal bud), stems, petioles & pods.Disease is wide spread all over the India. It remained serious at Parbhani in Maharashtra and in Karnataka in 1986 and was in epidemiological proportions in Sehore (Madhya Pradesh) in 1987.Heavy incidences are also reported from Kota, Delhi, Raipur and Indore (1989 onwards).This is a very serious disease as it can results in 100% loss. Yield losses of 70-80% from Sehore, 66% in Karnataka and 12% at Delhi have been reported.Disease is more severe at the temperature below 25 C and under water stress condition. Prolonged cool period reduces the chances of seed infection.',style: TextStyle(fontWeight: FontWeight.bold))  ),
 
                     ),
 
@@ -85,8 +86,7 @@ class Blight extends StatelessWidget {
                             color: Colors.lightGreen,
                             borderRadius:BorderRadius.circular(50)
                         ),
-                        child:   Center(child: Text('1On seed and seedling:-Infected stored seeds may develop raised or sunken lesions and become shriveled and slightly discoloured.If, infected seeds are used for sowing or infection is at an early stage then seedlings remain stunted and even die if growing point is infected. Lesions may also appear on the margin of the cotyledons.'
-                            '2.On well grown plant:-Small, angular, translucent, water soaked yellow to light brown spots appear on leaves.Center of spots soon dry out and spots turn reddish brown to black.These spots remain surrounded by water soaked margin and bordered by a yellowish green halo.On the underside of the leaf they glisten when wet.Heavy infection of young leaves may produce general chlorosis.In the later phase central portion of the older spots drop out or tear away so leaves appear ragged or shredded.Small or large water soaked lesions also occur on stems,petioles and pods.',style: TextStyle(fontWeight: FontWeight.bold)) )),
+                        child:   Center(child: Text('1.On well grown plant-Most striking symptom is the browning and curving of the terminal bud to form a crookLater on other buds become brown, necrotic and brittle .Necrosis of veins, midrib, petiole and stem is also common. Petioles are often thickened and shortened and may be curved distorting the shoot tips.Sometimes the petioles become so brittle that they break by pressing with fingersLeaflets are dwarfed and tend to cup or roll and the leaf blades become rugosed and bronzed.If infection is early then plants become severely stunted with shortened internodal length and several auxillary shoots.Pods are not formed or remain severely underdeveloped or aborted.',style: TextStyle(fontWeight: FontWeight.bold)) )),
 
 
                     Container(
@@ -97,14 +97,13 @@ class Blight extends StatelessWidget {
                             color: Colors.lightGreen,
                             borderRadius:BorderRadius.circular(50)
                         ),
-                        child: Center(child: Text('Pathogen free seed should be used for cultivation.Infected residues of preceding crop should be burnt.Use of varieties having good resistance viz. Bragg, VLS 2, Shivalik, Himso 1563, KHSb 2, PK 262, JS 71-05, JS 72-280, JS 335 etc.Foliar spray of copper oxychloride(0.2%) + streptocycline (0.02%) at time of appearance of disease.',style: TextStyle(fontWeight: FontWeight.bold)) ) ),
+                        child: Center(child: Text('No resistant varieties and suitable chemical control are available. However, following measures will keep the disease less severe with reduced yield loss.Less susceptible varieties viz. JS71-05, JS 79-81, KHSb 1 etc. should be cultivated.Crop should be kept free of broad-leaved weeds.Roguing and burning of disease infected plants or plant parts.Seed treatment with Imidacloprid @5 g/kg and spray of nuvacron (0.01%) or rogor (0.01%) or any other systemic insecticides.',style: TextStyle(fontWeight: FontWeight.bold)) ) ),
 
 
                   ],
                 ),
               ),
             ),
-
           ),
         ],
       ),

@@ -1,107 +1,92 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:soybeaan_icrc/soyfood.dart';
-
+import 'package:soybeaan_icrc/diseasecont/Soybean Mosaic.dart';
+import 'package:soybeaan_icrc/diseasecont/indian.dart';
+import 'package:soybeaan_icrc/diseasecont/phyllody.dart';
+import 'package:soybeaan_icrc/diseasecont/yellow.dart';
 
 class Viral extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-
-
-      body: CustomScrollView(
-        slivers: [
-          SliverAppBar(
-            floating: true,
-            expandedHeight: 200,
-            flexibleSpace: FlexibleSpaceBar(
-              background: Image.asset(
-                'assets/images/fungal.jpg',
-                fit: BoxFit.cover,
-              ),
-            ),
-
-            backgroundColor: Colors.green[900],
-
+      appBar: AppBar(
+        backgroundColor: Colors.green,
+        foregroundColor: Colors.white,
+        title: Text('Viral Diseases'),
+      ),
+      body: ListView(
+        scrollDirection: Axis.vertical,
+        children: [
+          _buildViralItem(
+            context,
+            'soybean Mosaic',
+            'assets/images/irrigated.jpg',
+            Mosaic(),
           ),
-          SliverFillRemaining(
-            child: DefaultTabController(
-              length: 3,
+          _buildViralItem(
+            context,
+            'Yellow Mosaic',
+            'assets/images/subsoiler.jpg',
+            yellow(),
+          ),
+          _buildViralItem(
+            context,
+            'Indian Bud Blight',
+            'assets/images/virus_bud_blight.jpg',
+            indian(),
+          ),
+          _buildViralItem(
+            context,
+            'Phyllody Associated No '
+                'Podding Syndrome',
+            'assets/images/virus_bud_blight.jpg',
+            phyllody(),
+          ),
+        ],
+      ),
+    );
+  }
 
-              child: Scaffold(backgroundColor: Colors.green[800],
-                appBar: AppBar(
-                  automaticallyImplyLeading: false,
-
-                  title: Text('Blue Beetle(Cneorane sp.)', style:TextStyle(color: Colors.white,fontSize: 20)),
-                  backgroundColor: Colors.green[800],
-
-                  bottom: TabBar(
-                    indicatorColor: Colors.white,
-                    tabs: [
-                      Tab(
-                        child: Text('Identification',
-
-
-                          style: TextStyle(fontSize: 14, color: Colors.white ,fontWeight: FontWeight.bold,),
-
-
-                        ),),
-                      Tab(
-                        child: Text('Damage',
-                          style: TextStyle(fontSize: 14, color: Colors.white ,fontWeight: FontWeight.bold),
-
-                        ),),
-
-                      Tab(
-                        child: Text('Management',
-                          style: TextStyle(fontSize: 14, color: Colors.white ,fontWeight: FontWeight.bold,),
-                        ),),
-
-                    ],
-                  ),
-
-                ),
-                body: TabBarView(
-                  children: [
-                    Container(
-
-                      margin: EdgeInsets.all(16.0),
-                      padding: EdgeInsets.all(18.0),
-                      decoration: BoxDecoration(
-
-                          color: Colors.lightGreen,
-                          borderRadius:BorderRadius.circular(50)
-                      ),
-                      child: Center(child: Text('This insect is dark metallic blue (almost blackish) in colour, with orange head.   With little disturbance, it falls on the ground and shows Feign-death',style: TextStyle(fontWeight: FontWeight.bold))  ),
-
-                    ),
-
-
-                    Container(
-
-                        margin: EdgeInsets.all(16.0),
-                        padding: EdgeInsets.all(18.0),
-                        decoration: BoxDecoration(
-                            color: Colors.lightGreen,
-                            borderRadius:BorderRadius.circular(50)
-                        ),
-                        child:   Center(child: Text('Usually its peak period of activity is first fortnight of July. During this period, it feeds on the cotyledons and young leaves, which results in stunted growth.  On heavy infestation, plant population is greatly affected and the yield loss is to the tune of 5 q/ha. Its infestation is more under high soil moisture conditions.',style: TextStyle(fontWeight: FontWeight.bold)) )),
-
-
-                    Container(
-
-                        margin: EdgeInsets.all(16.0),
-                        padding: EdgeInsets.all(18.0),
-                        decoration: BoxDecoration(
-                            color: Colors.lightGreen,
-                            borderRadius:BorderRadius.circular(50)
-                        ),
-                        child: Center(child: Text('Blue beetle can be effectively controlled by spray of Quinalphos 25 EC @ 1.5 l/ha.',style: TextStyle(fontWeight: FontWeight.bold)) ) ),
-
-
-                  ],
-                ),
+  Widget _buildViralItem(
+      BuildContext context,
+      String title,
+      String imagePath,
+      Widget page,
+      ) {
+    return GestureDetector(
+      onTap: () {
+        Navigator.push(
+          context,
+          MaterialPageRoute(builder: (context) => page),
+        );
+      },
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          ClipRRect(
+            borderRadius: BorderRadius.circular(10),
+            child: Image.asset(
+              imagePath,
+              width: 300,
+              height: 150,
+              fit: BoxFit.cover,
+            ),
+          ),
+          SizedBox(height: 8.0),
+          Container(
+            padding: EdgeInsets.all(8),
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(20),
+              color: Colors.green,
+            ),
+            child: Text(
+              title,
+              style: TextStyle(
+                fontSize: 16.0,
+                fontWeight: FontWeight.bold,
+                color: Colors.white,
               ),
+              textAlign: TextAlign.center,
             ),
           ),
         ],

@@ -5,7 +5,8 @@ class chakli extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: CustomScrollView(
+      body: SafeArea(
+    child:  CustomScrollView(
         slivers: [
           SliverAppBar(
             floating: true,
@@ -18,7 +19,7 @@ class chakli extends StatelessWidget {
             ),
             backgroundColor: Colors.green[800],
           ),
-          SliverFillRemaining(
+          SliverToBoxAdapter (
             child: Container(
               color: Colors.green[800],
               padding: EdgeInsets.all(16.0),
@@ -53,6 +54,7 @@ class chakli extends StatelessWidget {
             ),
           ),
         ],
+    ),
       ),
     );
   }

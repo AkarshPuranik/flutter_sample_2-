@@ -1,11 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:soybeaan_icrc/ContentPage.dart';
 import 'package:soybeaan_icrc/Disease_Management.dart';
+import 'package:soybeaan_icrc/contact.dart';
 import 'package:soybeaan_icrc/farm.dart';
+import 'package:soybeaan_icrc/good_agri.dart';
+import 'package:soybeaan_icrc/share.dart';
 import 'package:soybeaan_icrc/soyfood.dart';
 import 'Crop_Management.dart';
 import 'package:soybeaan_icrc/SoyInsect.dart';
-
+import 'package:soybeaan_icrc/advice.dart';
 
 
     class IntroPage extends StatelessWidget {
@@ -121,16 +124,46 @@ import 'package:soybeaan_icrc/SoyInsect.dart';
 
         ),
                     ListTile(leading:Icon(Icons.info_outline) ,title: Text('About Soybean Gyan'),),
-                    ListTile(leading:Icon(Icons.info_outline),title: Text('Good Agri Practices'),),
+                    ListTile(leading:Icon(Icons.info_outline),title: Text('Good Agri Practices'), onTap: (){ Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => Agri(),
+                        ),
+                    );
+        } ),
                     ListTile(leading:Icon(Icons.info_outline),title: Text('Insect Management Sys'),),
                     ListTile(leading:Icon(Icons.info_outline),title: Text('Farmer Problem Solution'),),
-                    ListTile(leading:Icon(Icons.info_outline),title: Text('Weekly Farming Advice'),),
-                    ListTile(leading:Icon(Icons.info_outline),title: Text('Pre-disposing Factors'),),
-                    ListTile(leading:Icon(Icons.share) ,title: Text('Share'),),
-                    ListTile(leading: Icon(Icons.call),title: Text('Contact'),)
-    ],
+                    ListTile(leading:Icon(Icons.info_outline),title: Text('Weekly Farming Advice'),onTap: () {
+        Navigator.push(
+        context,
+        MaterialPageRoute(
+        builder: (context) => Advice(),),
+        );
+        }),
+        ListTile(leading:Icon(Icons.info_outline),title: Text('Pre-disposing Factors'),),
+
+        ListTile(leading:Icon(Icons.share) ,title: Text('Share'),onTap: () {
+        Navigator.push(
+        context,
+        MaterialPageRoute(
+        builder: (context) => Advice(),),
+        );
+        }),
+        ListTile(leading: Icon(Icons.call),title: Text('Contact'),onTap: () {
+        Navigator.push(
+        context,
+        MaterialPageRoute(
+        builder: (context) => contact(),
+        ),
+        );
+        },
+        ),
+        ],
+
+
+        ),
     ),
-    ),
+
 
 
     body: Stack(
@@ -160,7 +193,7 @@ import 'package:soybeaan_icrc/SoyInsect.dart';
           )
         ],
       ),
-    );
+        );
 
 
   }

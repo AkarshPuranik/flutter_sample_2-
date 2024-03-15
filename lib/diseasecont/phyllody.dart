@@ -1,9 +1,10 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:soybeaan_icrc/soyfood.dart';
 
 
-class Blight extends StatelessWidget {
+
+
+class phyllody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -16,7 +17,7 @@ class Blight extends StatelessWidget {
             expandedHeight: 200,
             flexibleSpace: FlexibleSpaceBar(
               background: Image.asset(
-                'assets/images/blight.jpg',
+                'assets/images/pustule.jpg',
                 fit: BoxFit.cover,
               ),
             ),
@@ -32,7 +33,8 @@ class Blight extends StatelessWidget {
                 appBar: AppBar(
                   automaticallyImplyLeading: false,
 
-                  title: Text('Bacterial Blight', style:TextStyle(color: Colors.white,fontSize: 20)),
+                  title: Text('Phyllody Associated No '
+                  'Podding Syndrome', style:TextStyle(color: Colors.white,fontSize: 20)),
                   backgroundColor: Colors.green[800],
 
                   bottom: TabBar(
@@ -72,7 +74,7 @@ class Blight extends StatelessWidget {
                           color: Colors.lightGreen,
                           borderRadius:BorderRadius.circular(50)
                       ),
-                      child: Center(child: Text('Causal Organism : Pseudomonas savastanoi (P. syringae) pv. glycinea (Coerper.) Young. Dye & Wilkie (Syn. P. glycinea. Coerper).The bacterium is seed and air borne.It affects Stems, leaves, petioles and pods.The disease is commonly occurring in the states of Madhya Pradesh, Maharashtra, Himachal Pradesh, Uttaranchal and North East States.Losses ranging from 5 to 18% are known mainly on account of loss of leaf area during the reproductive stage of soybean.Cool and rainy weather favours the disease but it also occurs in warmer regions. High temperature and dry weather curb the disease.',style: TextStyle(fontWeight: FontWeight.bold))  ),
+                      child: Center(child: Text('Causal Organism:- PhytoplasmaThe causal agent is Phytoplasma usually transmitted by leaf hoppers.It affects Flower buds, flower, stems, pods and seeds.Disease is wide spread but more common in Madhya Pradesh.Disease can results in 20-30% loss in yield.',style: TextStyle(fontWeight: FontWeight.bold))  ),
 
                     ),
 
@@ -85,8 +87,7 @@ class Blight extends StatelessWidget {
                             color: Colors.lightGreen,
                             borderRadius:BorderRadius.circular(50)
                         ),
-                        child:   Center(child: Text('1On seed and seedling:-Infected stored seeds may develop raised or sunken lesions and become shriveled and slightly discoloured.If, infected seeds are used for sowing or infection is at an early stage then seedlings remain stunted and even die if growing point is infected. Lesions may also appear on the margin of the cotyledons.'
-                            '2.On well grown plant:-Small, angular, translucent, water soaked yellow to light brown spots appear on leaves.Center of spots soon dry out and spots turn reddish brown to black.These spots remain surrounded by water soaked margin and bordered by a yellowish green halo.On the underside of the leaf they glisten when wet.Heavy infection of young leaves may produce general chlorosis.In the later phase central portion of the older spots drop out or tear away so leaves appear ragged or shredded.Small or large water soaked lesions also occur on stems,petioles and pods.',style: TextStyle(fontWeight: FontWeight.bold)) )),
+                        child:   Center(child: Text('1.On well grown plant:-Symptoms generally appear either at the time of flowering or beginning of pod formation.Infected plants may have excessive branching, stem with short internodes, stunted growth and profuse bud proliferation.Floral organs of such plants transform into leaf-like structures known as phyllody.Plants may bear pods or pods are scanty with no seed or small wrinkled seed.Delayed senescence as plant such plants remain green fore more time than the healthy ones.Premature green pods express in-situ seed germination.',style: TextStyle(fontWeight: FontWeight.bold)) )),
 
 
                     Container(
@@ -97,14 +98,13 @@ class Blight extends StatelessWidget {
                             color: Colors.lightGreen,
                             borderRadius:BorderRadius.circular(50)
                         ),
-                        child: Center(child: Text('Pathogen free seed should be used for cultivation.Infected residues of preceding crop should be burnt.Use of varieties having good resistance viz. Bragg, VLS 2, Shivalik, Himso 1563, KHSb 2, PK 262, JS 71-05, JS 72-280, JS 335 etc.Foliar spray of copper oxychloride(0.2%) + streptocycline (0.02%) at time of appearance of disease.',style: TextStyle(fontWeight: FontWeight.bold)) ) ),
+                        child: Center(child: Text('Sprays of chlorpyrifos 1.5 lit. or triazophos 800 ml or methomyl 1 kg or ethion 1.5 lit. or quinalphos 1.5 lit. or ethofenprox 1 lit. per hectare at 18-20and at 28-30 days after sowing (spray solution required is 800 lit./ha) for hot spot areas. In other areas one spray at28-30 days after sowing.The other recommended package of practices as mentioned below should also be followed :1. Soil application of Phorate 10 G @ 1 kga.i./ha at the time of planting.2.Seeds from affected fields are not to be used for sowing purpose.3.Use of optimum seed rates (65 to 80 kg/ha for small and bold seeded varieties, respectively) to avoid the high plant population, which acts as predisposing factor for insect incidence.4.If possible, avoid cultivation of crops such as sun-hemp and sesame, which may harbour insect vectors and phytoplasma.',style: TextStyle(fontWeight: FontWeight.bold)) ) ),
 
 
                   ],
                 ),
               ),
             ),
-
           ),
         ],
       ),

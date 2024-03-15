@@ -1,9 +1,10 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:soybeaan_icrc/soyfood.dart';
 
 
-class Blight extends StatelessWidget {
+
+
+class yellow extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -16,7 +17,7 @@ class Blight extends StatelessWidget {
             expandedHeight: 200,
             flexibleSpace: FlexibleSpaceBar(
               background: Image.asset(
-                'assets/images/blight.jpg',
+                'assets/images/pustule.jpg',
                 fit: BoxFit.cover,
               ),
             ),
@@ -32,7 +33,7 @@ class Blight extends StatelessWidget {
                 appBar: AppBar(
                   automaticallyImplyLeading: false,
 
-                  title: Text('Bacterial Blight', style:TextStyle(color: Colors.white,fontSize: 20)),
+                  title: Text('Yellow Mosaic', style:TextStyle(color: Colors.white,fontSize: 20)),
                   backgroundColor: Colors.green[800],
 
                   bottom: TabBar(
@@ -72,7 +73,7 @@ class Blight extends StatelessWidget {
                           color: Colors.lightGreen,
                           borderRadius:BorderRadius.circular(50)
                       ),
-                      child: Center(child: Text('Causal Organism : Pseudomonas savastanoi (P. syringae) pv. glycinea (Coerper.) Young. Dye & Wilkie (Syn. P. glycinea. Coerper).The bacterium is seed and air borne.It affects Stems, leaves, petioles and pods.The disease is commonly occurring in the states of Madhya Pradesh, Maharashtra, Himachal Pradesh, Uttaranchal and North East States.Losses ranging from 5 to 18% are known mainly on account of loss of leaf area during the reproductive stage of soybean.Cool and rainy weather favours the disease but it also occurs in warmer regions. High temperature and dry weather curb the disease.',style: TextStyle(fontWeight: FontWeight.bold))  ),
+                      child: Center(child: Text('Causal Organism:- The incitant of the disease is Mung bean yellow mosaic virus.It is a gemini virus recently named genus Begomovirus which is not seed borne and transmitted predominantly by white flies Bemisia tabaci and B. gossypiperda and also by aphids and pollen.Disease produces symptom only on eaves.The disease is more common and severe in Kangra region of Himachal Pradesh, tarai region of Uttaranchal, plains of Delhi, Punjab and Haryana and parts of Madhya Pradesh and Uttar Pradesh.It can cause yield loss ranging from 5-90%.',style: TextStyle(fontWeight: FontWeight.bold))  ),
 
                     ),
 
@@ -85,8 +86,7 @@ class Blight extends StatelessWidget {
                             color: Colors.lightGreen,
                             borderRadius:BorderRadius.circular(50)
                         ),
-                        child:   Center(child: Text('1On seed and seedling:-Infected stored seeds may develop raised or sunken lesions and become shriveled and slightly discoloured.If, infected seeds are used for sowing or infection is at an early stage then seedlings remain stunted and even die if growing point is infected. Lesions may also appear on the margin of the cotyledons.'
-                            '2.On well grown plant:-Small, angular, translucent, water soaked yellow to light brown spots appear on leaves.Center of spots soon dry out and spots turn reddish brown to black.These spots remain surrounded by water soaked margin and bordered by a yellowish green halo.On the underside of the leaf they glisten when wet.Heavy infection of young leaves may produce general chlorosis.In the later phase central portion of the older spots drop out or tear away so leaves appear ragged or shredded.Small or large water soaked lesions also occur on stems,petioles and pods.',style: TextStyle(fontWeight: FontWeight.bold)) )),
+                        child:   Center(child: Text('1.On seed and seedling:-Symptoms can be seen in seedlings with in 15 days of germination as small yellow diffused patches which later on coalesce to make leaf more or less complete yellow.2.On well grown plant:-Symptoms of the disease appear in the form of conspicuous yellowing along small veins of the leaves followed by severe yellow mosaic and mottling of leaves, which is a diagnostic symptom.Yellowing is either scattered or produced in indefinite bands along the major veins.Rusty necrotic spots appear in the yellow areas as the leaves mature.Sometimes, growth of mould can be seen in the infected leaf areas.',style: TextStyle(fontWeight: FontWeight.bold)) )),
 
 
                     Container(
@@ -97,14 +97,13 @@ class Blight extends StatelessWidget {
                             color: Colors.lightGreen,
                             borderRadius:BorderRadius.circular(50)
                         ),
-                        child: Center(child: Text('Pathogen free seed should be used for cultivation.Infected residues of preceding crop should be burnt.Use of varieties having good resistance viz. Bragg, VLS 2, Shivalik, Himso 1563, KHSb 2, PK 262, JS 71-05, JS 72-280, JS 335 etc.Foliar spray of copper oxychloride(0.2%) + streptocycline (0.02%) at time of appearance of disease.',style: TextStyle(fontWeight: FontWeight.bold)) ) ),
+                        child: Center(child: Text('Pre sowing soil application of phorate @10kg/ha.Use of resistant varieties like PK 416, PK 472, PS 564, PK 1024, PK 1029, PK 1042, Pusa 37, SL 295, SL 525 etc.Cultivation of 2 to 3 or more varieties and change of varieties at least after every two years.Roguing of infected plants and plant parts.Weed free cultivation.Seed treatment with thiamethoxam 70WS @ 3g/kg seed in hot spot areas and spray of thiamethoxam 25 WG @ 100 g or methyl dematon 25EC @ 0.8 lit/ha or ethofenprox 10 EC @ 1.0 lit/ha.',style: TextStyle(fontWeight: FontWeight.bold)) ) ),
 
 
                   ],
                 ),
               ),
             ),
-
           ),
         ],
       ),

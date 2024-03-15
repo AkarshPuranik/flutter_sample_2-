@@ -40,7 +40,7 @@ class nankhatai extends StatelessWidget {
                       padding: EdgeInsets.all(18.0),
                       decoration: BoxDecoration(
                         color: Colors.lightGreen, // Light green background color
-                        borderRadius: BorderRadius.circular(10), // Rounded corners
+                        borderRadius: BorderRadius.circular(50), // Rounded corners
                       ),
                       child: Text(
                         'Soy Nankhatai can be prepared on gas in wok with heavy base or pressure cooker. Take refined wheat flour and soy flour (2:1), sieve together. Grind peeled cardamom and thinly slice pistachios. Melt butter at room temperature. Mix maida, roasted soy flour, baking powder, cardamom powder and sugar. Now add melted butter in the mixture and with help of your hands mix until you get soft dough. Take a utensil with heavy and plain base and add 400 grams salt or sand. Spread it evenly all around and place a wire or net stand in the utensil. Cover the utensil and allow it to get warm at low flame. Meanwhile prepare small balls of nankhatai and place them on a greased plate. Bake nankhatai for 15-20 minutes on low flame',
