@@ -6,27 +6,27 @@ class important extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Important Information'),
+        title: Text('Important Information',style:TextStyle(color: Colors.white),),
         backgroundColor: Colors.green,
       ),
       body: ListView(
         children: [
           ExpansionTile(
-            title: Text('Dropdown 1'),
+            title: Text('Recommended Soybean Varieties'),
             children: [
-              Image.asset('assets/image1.png'), // Replace with your image asset path
+              Image.asset('assets/images/imp3.jpg'), // Replace with your image asset path
             ],
           ),
           ExpansionTile(
-            title: Text('Dropdown 2'),
+            title: Text('Seed Rate and Spacing'),
             children: [
-              Image.asset('assets/image2.png'), // Replace with your image asset path
+              Image.asset('assets/images/imp2.jpg'), // Replace with your image asset path
             ],
           ),
           ExpansionTile(
-            title: Text('Dropdown 3'),
+            title: Text('Recommended Sowing Time'),
             children: [
-              Image.asset('assets/image3.png'), // Replace with your image asset path
+              Image.asset('assets/images/imp1.jpg'), // Replace with your image asset path
             ],
           ),
         ],

@@ -4,11 +4,13 @@ import 'package:soybeaan_icrc/Disease_Management.dart';
 import 'package:soybeaan_icrc/contact.dart';
 import 'package:soybeaan_icrc/farm.dart';
 import 'package:soybeaan_icrc/good_agri.dart';
+import 'package:soybeaan_icrc/important/important.dart';
 import 'package:soybeaan_icrc/share.dart';
 import 'package:soybeaan_icrc/soyfood.dart';
 import 'Crop_Management.dart';
 import 'package:soybeaan_icrc/SoyInsect.dart';
 import 'package:soybeaan_icrc/advice.dart';
+
 
 
     class IntroPage extends StatelessWidget {
@@ -119,10 +121,15 @@ import 'package:soybeaan_icrc/advice.dart';
     ),
                     Divider(),
                     ListTile(title: Text('Important Information'),
-                    onTap: (){
-        },
-
+                    onTap: (){Navigator.push(
+        context,
+        MaterialPageRoute(
+        builder: (context) => important(),
         ),
+        );
+        } ),
+
+
                     ListTile(leading:Icon(Icons.info_outline) ,title: Text('About Soybean Gyan'),),
                     ListTile(leading:Icon(Icons.info_outline),title: Text('Good Agri Practices'), onTap: (){ Navigator.push(
                         context,
