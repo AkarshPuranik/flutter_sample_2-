@@ -51,7 +51,7 @@ class _Disease_ManagementState extends State<Disease_Management> {
                       children: [
                         ClipRRect(
                           borderRadius: BorderRadius.circular(10),
-                          child: Image.asset('assets/images/bd.jpeg',
+                          child: Image.asset('assets/images/bd.jpg',
                               width: 150,height: 150,
                               fit: BoxFit.cover) ,
                         ),
@@ -112,7 +112,7 @@ class _Disease_ManagementState extends State<Disease_Management> {
                   children: [
                     ClipRRect(
                       borderRadius: BorderRadius.circular(10),
-                      child: Image.asset('assets/images/viral.jpeg',
+                      child: Image.asset('assets/images/viral.jpg',
                           width: 150,height: 150,
                           fit: BoxFit.cover) ,
                     ),

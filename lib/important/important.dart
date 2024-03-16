@@ -8,7 +8,12 @@ class important extends StatelessWidget {
       appBar: AppBar(
         title: Text('Important Information',style:TextStyle(color: Colors.white),),
         backgroundColor: Colors.green,
-      ),
+        leading: IconButton(
+          icon: Icon(Icons.arrow_back),color: Colors.white,
+          onPressed: () {
+            Navigator.of(context).pop();
+          },
+        ), ),
       body: ListView(
         children: [
           ExpansionTile(

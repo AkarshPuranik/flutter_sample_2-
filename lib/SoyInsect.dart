@@ -1,7 +1,7 @@
 
     import 'package:flutter/material.dart';
-    import 'package:soybeaan_icrc/blue_beetle.dart';
     import 'package:soybeaan_icrc/ContentPage.dart';
+import 'package:soybeaan_icrc/inscetscont/BlueBeetle.dart';
     import 'package:soybeaan_icrc/inscetscont/Brown.dart';
     import 'package:soybeaan_icrc/inscetscont/White.dart';
     import 'package:soybeaan_icrc/inscetscont/bihar.dart';
@@ -49,7 +49,7 @@
                     context,
                     'Blue Beetle',
                     'assets/images/blue.jpeg',
-                    BlueBeetle(),
+                    blueBeetle(),
                   ),
                   _buildInsectItem(
                     context,

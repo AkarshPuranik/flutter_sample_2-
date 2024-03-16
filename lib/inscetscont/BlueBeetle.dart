@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:soybeaan_icrc/SoyInsect.dart';
 
 
-class BlueBeetle extends StatelessWidget {
+class blueBeetle extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

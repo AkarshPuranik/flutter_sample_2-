@@ -40,6 +40,8 @@ dependencies:
   cupertino_icons: ^1.0.2
   url_launcher: ^6.2.5
   share_plus: ^7.2.2
+  carousel_slider: ^4.2.1
+  animated_splash_screen: ^1.3.0
 
 dev_dependencies:
   flutter_test:
@@ -90,7 +92,7 @@ flutter:
         - assets/images/soy_nankhatai.jpg
         - assets/images/soy_mathari.jpg
         - assets/images/soy_ladoo.jpg
-        -  assets/images/soy_halwa.jpg
+        - assets/images/soy_halwa.jpg
         - assets/images/soynuts.jpg
         - assets/images/soymilk.jpg
         - assets/images/soycurd.webp
@@ -103,9 +105,9 @@ flutter:
         - assets/images/gram.jpeg
         - assets/images/green.jpg
         - assets/images/semilooper.png
-        - assets/images/bd.jpeg
+        - assets/images/bd.jpg
         - assets/images/fungal.jpg
-        - assets/images/viral.jpeg
+        - assets/images/viral.jpg
         - assets/images/sb.jpg
         - assets/images/brown.jpg
         - assets/images/grub.jpg
@@ -116,6 +118,21 @@ flutter:
         - assets/images/white.jpg
         - assets/images/icons.jpg
         - assets/images/virus_bud_blight.jpg
+        - assets/images/important.jpg
+        - assets/images/farm.jpg
+        - assets/images/weed.jpg
+        - assets/images/cy.jpg
+        - assets/images/cyper.jpg
+        - assets/images/dig.jpg
+        - assets/images/cru.jpg
+        - assets/images/geni.jpg
+        - assets/images/disease.jpg
+        - assets/images/soyfood.jpg
+        - assets/images/insect.jpg
+        - assets/images/crop.jpg
+        - assets/images/pre.jpg
+
+
 
 
 
