@@ -12,7 +12,7 @@ class Tofu extends StatelessWidget {
             expandedHeight: 300,
             flexibleSpace: FlexibleSpaceBar(
               background: Image.asset(
-                'assets/images/tofu.jpeg',
+                'assets/images/tofu.jpg',
                 fit: BoxFit.cover,
               ),
             ),

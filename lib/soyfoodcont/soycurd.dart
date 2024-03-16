@@ -12,7 +12,7 @@ class curd extends StatelessWidget {
             expandedHeight: 300,
             flexibleSpace: FlexibleSpaceBar(
               background: Image.asset(
-                'assets/images/soycurd.webp',
+                'assets/images/soycurd.jpg',
                 fit: BoxFit.cover,
               ),
             ),

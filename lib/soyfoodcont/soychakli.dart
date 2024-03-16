@@ -13,7 +13,7 @@ class chakli extends StatelessWidget {
             expandedHeight: 300,
             flexibleSpace: FlexibleSpaceBar(
               background: Image.asset(
-                'assets/images/soychakli.jpeg',
+                'assets/images/soychakli.jpg',
                 fit: BoxFit.cover,
               ),
             ),

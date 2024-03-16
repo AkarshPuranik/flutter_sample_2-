@@ -48,19 +48,19 @@ class SoyFood extends StatelessWidget {
               _buildSoyFoodItem(
                 context,
                 'Tofu',
-                'assets/images/tofu.jpeg',
+                'assets/images/tofu.jpg',
                 Tofu(),
               ),
               _buildSoyFoodItem(
                 context,
                 'Soychakli',
-                'assets/images/soychakli.jpeg',
+                'assets/images/soychakli.jpg',
                 chakli(),
               ),
               _buildSoyFoodItem(
                 context,
                 'Soycurd',
-                'assets/images/soycurd.webp',
+                'assets/images/soycurd.jpg',
                 curd(),
               ),
               _buildSoyFoodItem(
