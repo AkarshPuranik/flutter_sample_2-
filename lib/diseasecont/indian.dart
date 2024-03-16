@@ -17,7 +17,7 @@ class indian extends StatelessWidget {
             expandedHeight: 200,
             flexibleSpace: FlexibleSpaceBar(
               background: Image.asset(
-                'assets/images/pustule.jpg',
+                'assets/images/virus_bud_blight.jpg',
                 fit: BoxFit.cover,
               ),
             ),

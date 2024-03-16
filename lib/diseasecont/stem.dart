@@ -17,7 +17,7 @@ class Stem extends StatelessWidget {
             expandedHeight: 200,
             flexibleSpace: FlexibleSpaceBar(
               background: Image.asset(
-                'assets/images/pustule.jpg',
+                'assets/images/stem_rot.jpg',
                 fit: BoxFit.cover,
               ),
             ),
@@ -33,7 +33,7 @@ class Stem extends StatelessWidget {
                 appBar: AppBar(
                   automaticallyImplyLeading: false,
 
-                  title: Text('Charcol Rot', style:TextStyle(color: Colors.white,fontSize: 20)),
+                  title: Text('Sclerotinia Stem Rot', style:TextStyle(color: Colors.white,fontSize: 20)),
                   backgroundColor: Colors.green[800],
 
                   bottom: TabBar(
