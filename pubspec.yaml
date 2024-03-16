@@ -131,6 +131,25 @@ flutter:
         - assets/images/insect.jpg
         - assets/images/crop.jpg
         - assets/images/pre.jpg
+        - assets/images/phyllody.jpg
+        - assets/images/yellow.jpg
+        - assets/images/mosaic.jpg
+        - assets/images/collar_rot.jpg
+        - assets/images/stem_rot.jpg
+        - assets/images/pod_blight.jpg
+        - assets/images/cercospora.jpg
+        - assets/images/leaf_spot.jpg
+        - assets/images/decay.jpg
+        - assets/images/fusarium.jpg
+        - assets/images/myrothecium.jpg
+        - assets/images/root_rot.jpg
+        - assets/images/brown_spot.jpg
+        - assets/images/phyllosticta.jpg
+        - assets/images/choanephora.jpg
+        - assets/images/aristastoma.jpg
+        - assets/images/mildew.jpg
+        - assets/images/target.jpg
+        - assets/images/rust.jpg
 
 
 

@@ -20,13 +20,13 @@ class Viral extends StatelessWidget {
           _buildViralItem(
             context,
             'soybean Mosaic',
-            'assets/images/irrigated.jpg',
+            'assets/images/mosaic.jpg',
             Mosaic(),
           ),
           _buildViralItem(
             context,
             'Yellow Mosaic',
-            'assets/images/subsoiler.jpg',
+            'assets/images/yellow.jpg',
             yellow(),
           ),
           _buildViralItem(
@@ -39,7 +39,7 @@ class Viral extends StatelessWidget {
             context,
             'Phyllody Associated No '
                 'Podding Syndrome',
-            'assets/images/virus_bud_blight.jpg',
+            'assets/images/phyllody.jpg',
             phyllody(),
           ),
         ],
