@@ -17,7 +17,7 @@ class Aristastoma extends StatelessWidget {
             expandedHeight: 200,
             flexibleSpace: FlexibleSpaceBar(
               background: Image.asset(
-                'assets/images/pustule.jpg',
+                'assets/images/aristastoma.jpg',
                 fit: BoxFit.cover,
               ),
             ),
@@ -33,7 +33,7 @@ class Aristastoma extends StatelessWidget {
                 appBar: AppBar(
                   automaticallyImplyLeading: false,
 
-                  title: Text('Bacterial Pustule', style:TextStyle(color: Colors.white,fontSize: 20)),
+                  title: Text('Aristastoma Leaf', style:TextStyle(color: Colors.white,fontSize: 20)),
                   backgroundColor: Colors.green[800],
 
                   bottom: TabBar(
@@ -73,7 +73,7 @@ class Aristastoma extends StatelessWidget {
                           color: Colors.lightGreen,
                           borderRadius:BorderRadius.circular(50)
                       ),
-                      child: Center(child: Text('',style: TextStyle(fontWeight: FontWeight.bold))  ),
+                      child: Center(child: Text('Causal Organism:-Aristastoma guttulo-sum and A. camarographioides are the pathogens responsible for this disease.It affects leaves.',style: TextStyle(fontWeight: FontWeight.bold))  ),
 
                     ),
 
@@ -86,7 +86,7 @@ class Aristastoma extends StatelessWidget {
                             color: Colors.lightGreen,
                             borderRadius:BorderRadius.circular(50)
                         ),
-                        child:   Center(child: Text('',style: TextStyle(fontWeight: FontWeight.bold)) )),
+                        child:   Center(child: Text('1.On well grown plant:-Irregular 2 to 22 mm in diameter spots limited at margin by vein with indistinct edge and more and less clear, alternating, narrow, light and dark brown areas appear on the leaves .Chlorotic halos are sometimes present.Diffuse chlorosis on lower surface is the distinct symptoms.Plants generally remain stunted.',style: TextStyle(fontWeight: FontWeight.bold)) )),
 
 
                     Container(
@@ -97,7 +97,7 @@ class Aristastoma extends StatelessWidget {
                             color: Colors.lightGreen,
                             borderRadius:BorderRadius.circular(50)
                         ),
-                        child: Center(child: Text('',style: TextStyle(fontWeight: FontWeight.bold)) ) ),
+                        child: Center(child: Text('No information is available on the management of the disease.',style: TextStyle(fontWeight: FontWeight.bold)) ) ),
 
 
                   ],

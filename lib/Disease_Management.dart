@@ -121,7 +121,7 @@ class _Disease_ManagementState extends State<Disease_Management> {
                     ElevatedButton(onPressed: (){
                       Navigator.push(context,
                         MaterialPageRoute(builder: (context)=>Viral
-                            (),),
+                          (),),
                       );
 
                     },

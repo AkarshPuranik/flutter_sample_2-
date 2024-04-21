@@ -1,9 +1,12 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:soybeaan_icrc/diseasecont/aristastoma.dart';
 import 'package:soybeaan_icrc/diseasecont/brown%20spot.dart';
+
 import 'package:soybeaan_icrc/diseasecont/cercospora.dart';
 import 'package:soybeaan_icrc/diseasecont/charcol.dart';
+
 import 'package:soybeaan_icrc/diseasecont/choanephora.dart';
 import 'package:soybeaan_icrc/diseasecont/collar.dart';
 import 'package:soybeaan_icrc/diseasecont/decay.dart';
@@ -27,14 +30,17 @@ class Fungal extends StatelessWidget {
         foregroundColor: Colors.white,
         title: Text('Fungal Diseases'),
       ),
-      body: ListView(
+      body:
+      ListView(
         scrollDirection: Axis.vertical,
         children: [
           _buildViralItem(
             context,
             'Charcol Rot',
             'assets/images/disease.jpg',
-            Charcol(),
+            charcol(),
+
+
           ),
           _buildViralItem(
             context,
@@ -102,7 +108,7 @@ class Fungal extends StatelessWidget {
             context,
             'Brown Spot',
             'assets/images/brown_spot.jpg',
-            Brown_spot(),
+            brown(),
           ),
           _buildViralItem(
             context,
@@ -145,18 +151,23 @@ class Fungal extends StatelessWidget {
       String title,
       String imagePath,
       Widget page,
-      ) {
+      )
+  {
     return GestureDetector(
+
       onTap: () {
+
         Navigator.push(
           context,
           MaterialPageRoute(builder: (context) => page),
+
         );
       },
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           ClipRRect(
+
             borderRadius: BorderRadius.circular(10),
             child: Image.asset(
               imagePath,
@@ -165,7 +176,7 @@ class Fungal extends StatelessWidget {
               fit: BoxFit.cover,
             ),
           ),
-          SizedBox(height: 8.0),
+          SizedBox(height: 16.0),
           Container(
             padding: EdgeInsets.all(8),
             decoration: BoxDecoration(

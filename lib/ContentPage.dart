@@ -5,16 +5,20 @@ import 'package:soybeaan_icrc/about.dart';
 import 'package:soybeaan_icrc/advice.dart';
 import 'package:soybeaan_icrc/good_agri.dart';
 import 'package:soybeaan_icrc/contact.dart';
+import 'package:soybeaan_icrc/share.dart';
 
 
 import 'package:soybeaan_icrc/SoyInsect.dart';
 import 'package:soybeaan_icrc/important/important.dart';
-import 'package:soybeaan_icrc/insect%20management.dart';
+
 import 'package:soybeaan_icrc/pre.dart';
 import 'package:soybeaan_icrc/soyfood.dart';
 import 'package:soybeaan_icrc/weed.dart';
+import 'package:soybeaan_icrc/shop.dart';
 
 import 'farm.dart';
+import 'package:soybeaan_icrc/camera.dart';
+
 
 
 class ContentPage extends StatelessWidget {
@@ -161,14 +165,14 @@ radius: 45,
     Navigator.push(
     context,
     MaterialPageRoute(
-    builder: (context) => insect(),),
+    builder: (context) => SoyInsect(),),
     );
     }),
             ListTile(leading:Icon(Icons.info_outline),title: Text('Farmer Problem Solution'),onTap: () {
     Navigator.push(
     context,
     MaterialPageRoute(
-    builder: (context) => insect(),),
+    builder: (context) => SoyInsect(),),
     );
     }),
             ListTile(leading:Icon(Icons.info_outline),title: Text('Weekly Farming Advice'),onTap: () {
@@ -198,6 +202,15 @@ radius: 45,
                 context,
                 MaterialPageRoute(
                   builder: (context) => contact(),
+                ),
+              );
+            },
+            ),
+            ListTile(leading: Icon(Icons.call),title: Text('Shop'),onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => Advice(),
                 ),
               );
             },
@@ -263,6 +276,12 @@ radius: 45,
                 'Important Information',
                 'assets/images/important.jpg',
                 important(),
+              ),
+              _buildSoyFoodItem(
+                context,
+                'Scan',
+                'assets/images/scan.jpg',
+                MyHomePage(),
               ),
 
 

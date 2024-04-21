@@ -1,0 +1,3 @@
+0 Anthracnose
+1 Bacterial postule
+2 Reject
